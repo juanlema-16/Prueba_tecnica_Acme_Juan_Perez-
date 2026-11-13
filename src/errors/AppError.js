@@ -11,7 +11,7 @@ export class AppError extends Error {
 }
 
 /**
- * Se lanza cuando los datos de un empleado no cumplen las reaglas de negocio (RN-01 a RN-05).
+ * Se lanza cuando los datos de un empleado no cumplen las reglas de negocio (RN-01 a RN-05).
  * Recibe un arreglo con TODOS los errores encontrados, no solo el primero.
  */
 export class ValidationError extends AppError {
