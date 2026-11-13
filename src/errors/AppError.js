@@ -1,14 +1,14 @@
 /**
- * Error base de la aplicacion.
+ * Error base de la aplicación.
  * Todos los errores "esperados" (de negocio) heredan de esta clase.
- * Asi la capa de UI puede distinguirlos de los errores inesperados (bugs).
+ * Así la capa de UI puede distinguirlos de los errores inesperados (bugs).
  */
 export class AppError extends Error {
   constructor(mensaje) {
     super(mensaje);
     this.name = this.constructor.name;
   }
-} 
+}
 
 /**
  * Se lanza cuando los datos de un empleado no cumplen las reaglas de negocio (RN-01 a RN-05).
@@ -31,7 +31,7 @@ export class NotFoundError extends AppError {
 }
 
 /**
- * Se lanza cuando se intenta registrar un empleado con una identificacion que ya existe.
+ * Se lanza cuando se intenta registrar un empleado con una identificación que ya existe.
  */
 export class DuplicateError extends AppError {
   constructor(mensaje = 'El recurso ya existe') {
