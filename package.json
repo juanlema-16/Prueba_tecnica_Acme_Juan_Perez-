@@ -1,0 +1,15 @@
+{
+  "name": "gestion-empleados-acme",
+  "version": "1.0.0",
+  "description": "Aplicación de consola para la gestión de empleados de ACME (Talento Humano)",
+  "type": "module",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "author": "Juan José Pérez Lema",
+  "license": "MIT"
+}
